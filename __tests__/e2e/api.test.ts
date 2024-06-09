@@ -1,7 +1,7 @@
 import request from 'supertest';
 import type { Server } from 'http';
 
-import * as AuthValidators from '../../src/controllers/auth/validators';
+import * as AuthValidators from '../../src/api/auth/validators';
 import { closeDatabase, createTestServer } from '../utils/testsHelpers';
 
 let server: Server;

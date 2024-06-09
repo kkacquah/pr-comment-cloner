@@ -65,10 +65,10 @@ jobs:
       postgres:
         image: postgres:15-alpine
         env:
-          POSTGRES_PORT: ${{ env.DB_PORT }}
-          POSTGRES_DB: ${{ env.TEST_DB_NAME }}
-          POSTGRES_USER: ${{ env.DB_USER }}
-          POSTGRES_PASSWORD: ${{ env.DB_PASSWORD }}
+          DB_PORT: ${{ env.DB_PORT }}
+          DB_DB: ${{ env.TEST_DB_NAME }}
+          DB_USER: ${{ env.DB_USER }}
+          DB_PASSWORD: ${{ env.DB_PASSWORD }}
         ports:
           - 5432:5432
         options: >-
